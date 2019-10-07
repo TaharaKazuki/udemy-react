@@ -6,9 +6,6 @@ import { increment, decrement } from '../actions'
 class App extends Component {
   render () {
     const props = this.props
-    console.info('props', this.props)
-    console.info('props', props)
-
     return (
       <>
         <div>value:{ props.value }</div>
