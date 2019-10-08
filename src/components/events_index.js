@@ -8,10 +8,8 @@ import { readEvents } from '../actions'
 class EventsIndex extends Component {
   componentDidMount() {
     this.props.readEvents()
-    console.info('this.props1', this.props)
   }
   renderEvents () {
-    console.info('this.props2', this.props)
     return _.map(this.props.events, event => (
       <tr key={event.id}>
         <td>{event.id}</td>
